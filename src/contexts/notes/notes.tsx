@@ -39,7 +39,9 @@ const useNotes = () => {
     (editedNote: Note) =>
       setNotes(
         notes.map((oldNote) =>
-          editedNote.id === oldNote.id ? editedNote : oldNote
+          editedNote.id === oldNote.id
+            ? { ...editedNote, editionDate: new Date() }
+            : oldNote
         )
       ),
     [notes]
