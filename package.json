@@ -1,6 +1,6 @@
 {
   "name": "note-manager",
-  "homepage": "https://github.com/kayki-araujo/note-manager",
+  "homepage": "https://kayki-araujo.github.io/note-manager/",
   "private": true,
   "version": "0.0.1",
   "type": "module",
@@ -9,7 +9,7 @@
     "build": "tsc && vite build",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@loadable/component": "^5.15.2",

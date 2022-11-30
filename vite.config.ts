@@ -4,6 +4,8 @@ import path from 'path';
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: '/note-manager/',
+  plugins: [react()],
   resolve: {
     alias: {
       '@components': path.resolve(__dirname, './src/components'),
@@ -15,5 +17,4 @@ export default defineConfig({
       '@contexts': path.resolve(__dirname, './src/contexts'),
     },
   },
-  plugins: [react()],
 });
